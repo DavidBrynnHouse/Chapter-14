@@ -1,4 +1,7 @@
 import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
@@ -12,6 +15,10 @@ public class RandomCards extends Application{
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Pane pane = new Pane();
+        GridPane gridPane = new GridPane();
+        gridPane.setAlignment(Pos.BASELINE_LEFT);
+        gridPane.setPadding(new Insets(5, 5, 5, 5));
+        gridPane.setHgap(5);
+        gridPane.setVgap(5);
     }
 }
