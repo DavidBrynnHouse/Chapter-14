@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 public class RotatedLetters extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
-        String s = "I love Java!";
+        String s = "Welcome To Java!";
         double radius = 250;
 
         //Not sure why but this is the only type of pane which
@@ -22,7 +22,6 @@ public class RotatedLetters extends Application{
         //or putting them in a line
         BorderPane pane = new BorderPane();
         pane.setPadding(new Insets(10, 10, 10, 10));
-        pane.centerProperty();
 
         //sets the center of teh circle to the center of the pane
         pane.setTranslateY((radius * 4) / 3);
